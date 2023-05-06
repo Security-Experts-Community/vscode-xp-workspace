@@ -3,6 +3,10 @@
 
 Данный проект помогает автоматизировать развёртывание рабочего окружения для написания правил на языке XP.
 
+<p align="center">
+  <img alt="XP Workspace in action" src="https://user-images.githubusercontent.com/61383585/236648422-aeb606f4-5e65-4914-b804-09b9cc97d399.png">
+</p>
+
 При создании рабочего окружения используются проекты:
 - [code-server](https://coder.com/docs/code-server/latest/install)
 - [open-xp-rules](https://github.com/Security-Experts-Community/open-xp-rules)
