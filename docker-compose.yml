@@ -1,0 +1,7 @@
+version: "3.9"
+services:
+  code-server:
+    image: aw350m3/vscode-xp-workspace
+    container_name: vscode-xp-workspace
+    ports:
+      - 3503:8080
