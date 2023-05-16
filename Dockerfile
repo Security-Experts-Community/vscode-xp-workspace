@@ -29,7 +29,7 @@ RUN sudo apt-get update && \
 	sudo dpkg -i packages-microsoft-prod.deb && \
 	rm packages-microsoft-prod.deb && \
 	sudo apt-get update && \
-	sudo apt-get install -y dotnet-runtime-2.1 && \
+	sudo apt-get install -y dotnet-sdk-6.0 && \
 	sudo chown -R ${NB_USER}:${NB_USER} ${HOME} && \
 	wget https://github.com/vxcontrol/xp-kbt/releases/download/26.0.4358/kbt.26.0.4358-debian.zip -O xp-kbt.zip && \
 	unzip xp-kbt.zip -d xp-kbt && \

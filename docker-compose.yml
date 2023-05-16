@@ -5,3 +5,6 @@ services:
     container_name: vscode-xp-workspace
     ports:
       - 3503:8080
+    volumes:
+      - ./data:/home/coder/data
+      - ./.config:/home/coder/.config
