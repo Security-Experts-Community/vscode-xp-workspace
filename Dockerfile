@@ -40,4 +40,6 @@ RUN sudo apt-get update && \
 	mkdir -p ./open-xp-rules/.vscode && \
 	mkdir /tmp/vscode-xp && \
 	printf "{\n    \"xpConfig.outputDirectoryPath\": \"/tmp/vscode-xp\"\n}" > ./open-xp-rules/.vscode/settings.json && \
-	code-server --install-extension SecurityExpertsCommunity.xp ./open-xp-rules
+	code-server --install-extension SecurityExpertsCommunity.xp && \
+	code-server --install-extension streetsidesoftware.code-spell-checker-russian && \
+	code-server --install-extension MS-CEINTL.vscode-language-pack-ru
