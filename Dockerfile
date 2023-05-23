@@ -36,10 +36,10 @@ RUN sudo apt-get update && \
 	rm xp-kbt.zip && \
 	git clone https://github.com/Security-Experts-Community/open-xp-rules.git && \
 	mkdir -p ${USER_SETTINGS} && \
-    printf "{\n    \"xpConfig.kbtBaseDirectory\": \"${HOME}/xp-kbt\"\n}" > ${USER_SETTINGS}/settings.json && \
+        printf "{\n    \"xpConfig.kbtBaseDirectory\": \"${HOME}/xp-kbt\",\n    \"cSpell.language\": \"en,ru\"\n}" > ${USER_SETTINGS}/settings.json && \
 	mkdir -p ./open-xp-rules/.vscode && \
 	mkdir /tmp/vscode-xp && \
-	printf "{\n    \"xpConfig.outputDirectoryPath\": \"/tmp/vscode-xp,\"\n    \"cSpell.language\": \"en,ru\"\n}" > ./open-xp-rules/.vscode/settings.json && \
+	printf "{\n    \"xpConfig.outputDirectoryPath\": \"/tmp/vscode-xp\"\n}" > ./open-xp-rules/.vscode/settings.json && \
 	code-server --install-extension SecurityExpertsCommunity.xp && \
 	code-server --install-extension streetsidesoftware.code-spell-checker-russian && \
 	code-server --install-extension MS-CEINTL.vscode-language-pack-ru
